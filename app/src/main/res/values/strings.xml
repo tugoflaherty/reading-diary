@@ -1,0 +1,150 @@
+<resources>
+    <!-- english language start -->
+
+    <!-- global app start -->
+    <string name="app_name">Reading Diary</string>
+    <!-- global app end   -->
+
+    <!-- buttons start -->
+    <string name="button_yes">Yes</string>
+    <string name="button_exit">Exit</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_email">Email</string>
+    <string name="button_next">Next</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_save">Save</string>
+    <string name="button_confirm">Confirm</string>
+    <!-- buttons end   -->
+
+    <!-- home screen start-->
+    <string name="home_screen_name">Home</string>
+    <string name="home_title">Reading Diary</string>
+    <string name="home_subtitle">Kingston Primary School</string>
+    <string name="home_welcome">Hey there!\nWelcome to the Reading Diary app\nWould you like to:</string>
+    <string name="home_dialog_create_users_message">No users found. Users are required to link the app to your household. Set up users now?</string>
+    <string name="home_dialog_create_users_title">No Users Found</string>
+    <!-- home screen end  -->
+
+    <!-- reading history start -->
+    <string name="reading_history_screen_name">View Reading History</string>
+    <string name="reading_diary_dialog_delete_record_message">Are you sure you wish to delete this diary entry?</string>
+    <string name="reading_diary_dialog_delete_record_title">Confirm Delete Diary Entry</string>
+    <!-- reading history end   -->
+
+    <!-- view diary entry start -->
+    <string name="view_diary_entry_screen_name">View Diary Entry</string>
+    <string name="diary_entry_page_information_pages_read_title">Pages Read</string>
+    <!-- view diary entry end   -->
+
+    <!-- new diary entry information start -->
+    <string name="new_diary_entry_information_screen_name">Add New Diary Entry</string>
+    <string name="diary_entry_information_reading_information_title">Reading Information</string>
+    <string name="diary_entry_information_reading_information_start_date_time_title">Reading Start Date and Time</string>
+    <string name="diary_entry_information_reading_information_start_date_time_hint">Select Reading Start Date/Time</string>
+    <string name="diary_entry_information_reading_information_start_date_time_help">Please select the date and time you started reading</string>
+    <string name="diary_entry_information_reading_information_end_date_time_title">Reading End Date and Time</string>
+    <string name="diary_entry_information_reading_information_end_date_time_hint">Select Reading End Date/Time</string>
+    <string name="diary_entry_information_reading_information_end_date_time_help">Please select the date and time you finished reading</string>
+    <string name="diary_entry_information_book_information_title">Book Information</string>
+    <string name="diary_entry_information_book_information_book_title_title">Book Title</string>
+    <string name="diary_entry_information_book_information_book_title_help">Please enter the name of the book you read</string>
+    <string name="diary_entry_information_book_information_book_title_hint">Enter book title...</string>
+    <string name="diary_entry_information_book_information_author_name_title">Book Author</string>
+    <string name="diary_entry_information_book_information_author_name_help">Please enter the name of the writer of the book you read</string>
+    <string name="diary_entry_information_book_information_author_name_hint">Enter author\'s name...</string>
+    <string name="diary_entry_information_book_information_page_count_title">Page Count</string>
+    <string name="diary_entry_information_book_information_page_count_help">Please enter the total number of pages of the book you read</string>
+    <string name="diary_entry_information_book_information_page_count_hint">Enter book page count...</string>
+    <string name="diary_entry_information_page_information_title">Page Information</string>
+    <string name="diary_entry_information_page_information_start_page_title">Start Page</string>
+    <string name="diary_entry_information_page_information_start_page_help">Please enter the page number of the first page you read</string>
+    <string name="diary_entry_information_page_information_start_page_hint">Enter reading starting page...</string>
+    <string name="diary_entry_information_page_information_end_page_title">End Page</string>
+    <string name="diary_entry_information_page_information_end_page_help">Please enter the page number of the last page you read</string>
+    <string name="diary_entry_information_page_information_end_page_hint">Enter reading ending page...</string>
+    <!-- new diary entry information end   -->
+
+    <!-- new diary entry pupil comments start -->
+    <string name="new_diary_entry_pupil_comments_screen_name">Add New Diary Entry - Pupil Comments</string>
+    <string name="diary_entry_pupil_comments_title">Pupil Comments</string>
+    <string name="diary_entry_pupil_comments_enjoyment_rating_title">Enjoyment Rating</string>
+    <string name="diary_entry_pupil_comments_enjoyment_rating_help">Did you like this book? Tap on the stars to rate it</string>
+    <string name="diary_entry_pupil_comments_enjoyment_rating_hint">Select a star rating out of five...</string>
+    <string name="diary_entry_pupil_comments_enjoyment_rating_one_star_guide">One star means the book was boring and you wouldn\'t want to read it again</string>
+    <string name="diary_entry_pupil_comments_enjoyment_rating_five_star_guide">Five stars means the book was really fun and you\'d love to read it again</string>
+    <string name="diary_entry_pupil_comments_additional_comments_title">Comments</string>
+    <string name="diary_entry_pupil_comments_additional_comments_help">Please tell us a bit more about the book</string>
+    <string name="diary_entry_pupil_comments_additional_comments_hint">Enter additional comments...</string>
+    <!-- new diary entry pupil comments end   -->
+
+    <!-- new diary entry parent comments start -->
+    <string name="new_diary_entry_parent_comments_screen_name">Add New Diary Entry - Parent/Guardian Comments</string>
+    <string name="diary_entry_parent_comments_title">Parent/Guardian Comments</string>
+    <string name="diary_entry_parent_comments_reading_ability_rating_title">Reading Ability Rating</string>
+    <string name="diary_entry_parent_comments_reading_ability_rating_help">Was your child a confident reader? Did you notice any struggles or lack of understanding when they were reading?</string>
+    <string name="diary_entry_parent_comments_reading_ability_rating_one_star_guide_help">One star means they struggled lots when reading, or didn\'t understand lots of the words or storyline</string>
+    <string name="diary_entry_parent_comments_reading_ability_rating_five_star_guide_help">Five stars means they read the book with ease, and had no gaps in knowledge or understanding</string>
+    <string name="diary_entry_parent_comments_reading_ability_rating_hint">Select a star rating out of five...</string>
+    <string name="diary_entry_parent_comments_additional_comments_title">Comments</string>
+    <string name="diary_entry_parent_comments_additional_comments_help">Please tell us a bit more about your experience of supervising you child\'s reading</string>
+    <string name="diary_entry_parent_comments_additional_comments_hint">Enter additional comments...</string>
+    <!-- new diary entry parent comments end   -->
+
+    <!-- new diary entry teacher comments start -->
+    <string name="new_diary_entry_teacher_comments_screen_name">Add New Diary Entry - Teacher Comments</string>
+    <string name="diary_entry_teacher_comments_title">Teacher Comments</string>
+    <string name="diary_entry_teacher_comments_reading_progress_rating_title">Reading Progress Rating</string>
+    <string name="diary_entry_teacher_comments_reading_progress_rating_help">How is the pupil\'s progress? Are they reading at the expected level, and for a suitable amount of time?</string>
+    <string name="diary_entry_teacher_comments_reading_progress_rating_one_star_guide_help">One star means they are not reading complex enough books, is struggling with the expected reading level, or is not reading for long enough</string>
+    <string name="diary_entry_teacher_comments_reading_progress_rating_five_star_guide_help">Five stars means they are reading complex books without struggling, at a higher than expected reading level, and for a suitable amount of time</string>
+    <string name="diary_entry_teacher_comments_reading_progress_rating_hint">Select a star rating out of five...</string>
+    <string name="diary_entry_teacher_comments_additional_comments_title">Comments</string>
+    <string name="diary_entry_teacher_comments_additional_comments_help">Provide any additional comments below. Comments may discuss book complexity, reading level difficulty, amount of time spent reading, or difficulty level of next book</string>
+    <string name="diary_entry_teacher_comments_additional_comments_hint">Enter additional comments...</string>
+    <!-- new diary entry teacher comments end   -->
+
+    <!-- settings start -->
+    <string name="settings_screen_name">Settings</string>
+    <!-- settings end   -->
+
+    <!-- view users start -->
+    <string name="view_users_screen_name">View Users</string>
+    <string name="view_users_pupils_title">Pupils</string>
+    <string name="view_users_pupils_help">The reading diary contains the following pupils:</string>
+    <string name="view_users_parents_title">Parents/Guardians</string>
+    <string name="view_users_parents_help">The reading diary contains the following parents/guardians:</string>
+    <string name="view_users_teachers_title">Teachers</string>
+    <string name="view_users_teachers_help">The reading diary contains the following teachers:</string>
+    <!-- view users end   -->
+
+    <!-- edit users start -->
+    <string name="edit_users_screen_name">Edit Users</string>
+    <string name="edit_users_pupils_section_title">Pupil</string>
+    <string name="edit_users_pupils_title">Pupil\'s name</string>
+    <string name="edit_users_pupils_help">Please enter the pupil\'s name</string>
+    <string name="edit_users_pupils_hint">Enter pupil\'s name...</string>
+    <string name="edit_users_parents_section_title">Parent/Guardian</string>
+    <string name="edit_users_parents_title">Parent/Guardian\'s name</string>
+    <string name="edit_users_parents_help">Please enter the parent/guardian\'s name</string>
+    <string name="edit_users_parents_hint">Enter parent/guardian\'s name...</string>
+    <string name="edit_users_teachers_section_title">Teacher</string>
+    <string name="edit_users_teachers_title">Teacher\'s name</string>
+    <string name="edit_users_teachers_help">Please enter the teacher\'s name</string>
+    <string name="edit_users_teachers_hint">Enter teacher\'s name...</string>
+    <!-- edit users end   -->
+
+    <!-- edit diary entry menu start -->
+    <string name="edit_diary_entry_menu_title">Edit Entry Menu</string>
+    <string name="edit_diary_entry_menu_information">Edit Entry Information</string>
+    <string name="edit_diary_entry_menu_pupil_comments">Edit Pupil Comments</string>
+    <string name="edit_diary_entry_menu_parent_comments">Edit Parent Comments</string>
+    <string name="edit_diary_entry_menu_teacher_comments">Edit Teacher Comments</string>
+    <!-- edit diary entry menu end   -->
+
+    <!-- settings start -->
+    <string name="manage_users_screen_name">Manage Users</string>
+    <!-- settings end   -->
+
+    <!-- english language end   -->
+</resources>

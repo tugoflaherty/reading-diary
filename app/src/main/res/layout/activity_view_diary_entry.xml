@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDiaryEntryActivity"
+    android:background="@drawable/background_image">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view_diary_entry_navigation_buttons">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginBottom="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:contentDescription="@string/view_diary_entry_screen_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_reading_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_reading_information_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/view_diary_entry_button_email_diary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/button_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/email_icon" />
+
+            <TextView
+                    android:id="@+id/view_diary_entry_information_reading_information_start_date_time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/diary_entry_information_reading_information_start_date_time_title"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_reading_information_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_reading_information_start_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_reading_information_start_date_time_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_reading_information_end_date_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_reading_information_end_date_time_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_reading_information_start_date_time" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_reading_information_end_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_reading_information_end_date_time_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_book_information_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_reading_information_end_date_time" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_book_title_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_book_information_book_title_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_book_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_book_title_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_author_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_book_information_author_name_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_book_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_author_name_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_page_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_page_information_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_author_name" />
+
+            <ProgressBar
+                android:id="@+id/view_diary_entry_information_book_information_pages_read_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="350dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:max="100"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_page_information_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_pages_read_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_page_information_pages_read_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_pages_read_progress_bar" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_information_book_information_pages_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_information_book_information_pages_read_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_pupil_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_pupil_comments_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_diary_entry_information_book_information_pages_read" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_pupil_comments_enjoyment_rating_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_pupil_comments_enjoyment_rating_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_pupil_comments_title" />
+
+            <RatingBar
+                android:id="@+id/view_diary_entry_pupil_comments_enjoyment_rating_bar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/diary_entry_pupil_comments_enjoyment_rating_title"
+                android:isIndicator="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_pupil_comments_enjoyment_rating_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_pupil_comments_additional_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_pupil_comments_additional_comments_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_pupil_comments_enjoyment_rating_bar" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_pupil_comments_additional_comments"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_pupil_comments_additional_comments_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_parent_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_parent_comments_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_diary_entry_pupil_comments_additional_comments" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_parent_comments_reading_ability_rating_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_parent_comments_reading_ability_rating_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_parent_comments_title" />
+
+            <RatingBar
+                android:id="@+id/view_diary_entry_parent_comments_reading_ability_rating_bar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/diary_entry_parent_comments_reading_ability_rating_title"
+                android:isIndicator="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_parent_comments_reading_ability_rating_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_parent_comments_additional_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_parent_comments_additional_comments_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_parent_comments_reading_ability_rating_bar" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_parent_comments_additional_comments"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_parent_comments_additional_comments_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_teacher_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_teacher_comments_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_diary_entry_parent_comments_additional_comments" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_teacher_comments_reading_progress_rating_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_teacher_comments_reading_progress_rating_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_teacher_comments_title" />
+
+            <RatingBar
+                android:id="@+id/view_diary_entry_teacher_comments_reading_progress_rating_bar"
+                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:contentDescription="@string/diary_entry_teacher_comments_reading_progress_rating_title"
+                android:isIndicator="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_teacher_comments_reading_progress_rating_title" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_teacher_comments_additional_comments_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_teacher_comments_additional_comments_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_teacher_comments_reading_progress_rating_bar" />
+
+            <TextView
+                android:id="@+id/view_diary_entry_teacher_comments_additional_comments"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_teacher_comments_additional_comments_title" />
+
+            <Button
+                android:id="@+id/view_diary_entry_button_edit"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/button_edit"
+                app:backgroundTint="@color/blue"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_teacher_comments_additional_comments"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.234"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <Button
+                android:id="@+id/view_diary_entry_button_delete"
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/button_delete"
+                app:backgroundTint="@color/blue"
+                app:layout_constraintTop_toBottomOf="@+id/view_diary_entry_teacher_comments_additional_comments"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.244"
+                app:layout_constraintStart_toEndOf="@+id/view_diary_entry_button_edit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

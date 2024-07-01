@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDiaryEntryInformationActivity"
+    android:background="@drawable/background_image">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_diary_entry_information_button_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/new_diary_entry_information_screen_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/edit_diary_entry_information_button_cancel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_reading_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_reading_information_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_reading_information_start_date_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_reading_information_start_date_time_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_reading_information_title" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_reading_information_start_date_time_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_reading_information_start_date_time_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_reading_information_start_date_time_title" />
+
+            <Button
+                android:id="@+id/edit_reading_start_datetime_input"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="@string/diary_entry_information_reading_information_start_date_time_hint"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_reading_information_start_date_time_help" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_reading_information_end_date_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_reading_information_end_date_time_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_reading_start_datetime_input" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_reading_information_end_date_time_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_reading_information_end_date_time_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_reading_information_end_date_time_title" />
+
+            <Button
+                android:id="@+id/edit_reading_end_datetime_input"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="@string/diary_entry_information_reading_information_end_date_time_hint"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_reading_information_end_date_time_help" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_book_information_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_reading_end_datetime_input" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_book_title_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_book_information_book_title_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_title" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_book_title_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_book_information_book_title_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_book_title_title" />
+
+            <EditText
+                android:id="@+id/edit_book_title_input"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/diary_entry_information_book_information_book_title_hint"
+                android:text=""
+                android:inputType="textCapWords"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_book_title_help"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_author_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_book_information_author_name_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_book_title_input" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_author_name_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_book_information_author_name_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_author_name_title" />
+
+            <EditText
+                android:id="@+id/edit_book_author_input"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/diary_entry_information_book_information_author_name_hint"
+                android:text=""
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_author_name_help"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_page_count_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_book_information_page_count_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_book_author_input" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_book_information_page_count_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_book_information_page_count_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_page_count_title" />
+
+            <EditText
+                android:id="@+id/edit_page_count_input"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/diary_entry_information_book_information_page_count_hint"
+                android:text=""
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_book_information_page_count_help"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_page_information_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_page_information_title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_page_count_input" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_page_information_start_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/diary_entry_information_page_information_start_page_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_page_information_title" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_page_information_start_page_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_page_information_start_page_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_page_information_start_page_title" />
+
+            <EditText
+                android:id="@+id/edit_start_page_input"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/diary_entry_information_page_information_start_page_hint"
+                android:text=""
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_page_information_start_page_help"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_page_information_end_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_page_information_end_page_title"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_start_page_input" />
+
+            <TextView
+                android:id="@+id/edit_diary_entry_information_page_information_end_page_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/diary_entry_information_page_information_end_page_help"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_page_information_end_page_title" />
+
+            <EditText
+                android:id="@+id/edit_end_page_input"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:hint="@string/diary_entry_information_page_information_end_page_hint"
+                android:text=""
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_diary_entry_information_page_information_end_page_help"
+                android:importantForAutofill="no" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/edit_diary_entry_information_button_cancel"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/button_cancel"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/edit_diary_entry_information_button_save"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/button_save"
+        app:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toEndOf="@+id/edit_diary_entry_information_button_cancel" />
+
+    <ImageButton
+        android:id="@+id/edit_diary_entry_information_navigation_button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/home_screen_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageButton
+        android:id="@+id/edit_diary_entry_information_navigation_button_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/reading_history_screen_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_diary_entry_information_navigation_button_home"
+        app:srcCompat="@drawable/list_icon"
+        app:tint="@color/blue" />
+
+    <ImageButton
+        android:id="@+id/edit_diary_entry_information_navigation_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/new_diary_entry_information_screen_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_diary_entry_information_navigation_button_history"
+        app:srcCompat="@drawable/add_icon" />
+
+    <ImageButton
+        android:id="@+id/edit_diary_entry_information_navigation_button_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/settings_screen_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_diary_entry_information_navigation_button_add"
+        app:srcCompat="@drawable/settings_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
